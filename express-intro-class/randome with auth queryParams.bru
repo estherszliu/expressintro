@@ -1,0 +1,22 @@
+meta {
+  name: randome with auth queryParams
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:3000/pokemon/random?weather=rainy
+  body: json
+  auth: none
+}
+
+query {
+  weather: rainy
+}
+
+body:json {
+  {
+    "favouritePokemon": "squirtle",
+    "favouritefood": "mango"
+  }
+}
